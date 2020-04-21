@@ -20,16 +20,6 @@ class CovidCases extends Component {
         <h1 className="display-4 mb-2">
           <span className="text-info">COVID19</span> Cases
         </h1>
-        <select class="form-control" name="state" id="maxRows">
-          <option value="5000">Show ALL Rows</option>
-          <option value="5">5</option>
-          <option value="10">10</option>
-          <option value="15">15</option>
-          <option value="20">20</option>
-          <option value="50">50</option>
-          <option value="70">70</option>
-          <option value="100">100</option>
-        </select>
         <table className="table table-striped covid-table" id="covid-table">
           <thead>
             <tr>
@@ -50,26 +40,6 @@ class CovidCases extends Component {
             ))}
           </tbody>
         </table>
-
-        <div class="pagination-container">
-          <nav>
-            <ul class="pagination">
-              <li data-page="prev">
-                <span>
-                  {" "}
-                  &lt; <span class="sr-only">(current)</span>
-                </span>
-              </li>
-
-              <li data-page="next" id="prev">
-                <span>
-                  {" "}
-                  &gt; <span class="sr-only">(current)</span>
-                </span>
-              </li>
-            </ul>
-          </nav>
-        </div>
       </React.Fragment>
     );
   }
