@@ -14,7 +14,7 @@ function App() {
     <Provider store={store}>
       <Router>
         <Navbar branding="COVID19" />
-        <div className="container">
+        <div className="container-fluid">
           <Switch>
             <Route exact path="/" component={CovidCases} />
             <Route exact path="/about" component={About} />

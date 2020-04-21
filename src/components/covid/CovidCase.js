@@ -13,6 +13,7 @@ class CovidCase extends Component {
       TotalRecovered,
       Date,
     } = this.props.covidCase;
+    console.log(this.props.covidCase);
 
     return (
       <tr>
